@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 1. RESET CSS (PENTING AGAR MENYATU) */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        /* Warna latar belakang gelap */
+        color: white;
+    }
+
+    /* 2. GAYA NAVBAR */
+    .navbar {
+        width: 100%;
+        /* Lebar penuh */
+        height: 70px;
+        /* Tinggi navbar */
+        background-color: #3a3a3a;
+        /* Warna Hijau Khas Kick (contoh) */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* Logo di kiri, Menu di kanan */
+        padding: 0 20px;
+        /* Jarak isi navbar dari pinggir */
+
+        /* Agar tetap di atas saat di-scroll (Opsional, hapus jika ingin ikut scroll) */
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    /* Daftar Menu */
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: white;
+        /* Efek saat kursor diarahkan */
+    }
+
+    /* 3. KONTEN HALAMAN (CONTOH) */
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">MLCTV LIVE</a>
+    </nav>
+
+    <div class="content">
+        <a href="#"></a>
+    </div>
+
+    <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <style>
+            /* Reset Dasar */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: none;
+                /* PENTING: Beri jarak bawah agar konten tidak tertutup navbar */
+                padding-bottom: 80px;
+            }
+
+            /* --- GAYA BOTTOM NAVBAR --- */
+            .bottom-navbar {
+                position: fixed;
+                /* Kunci agar menempel di layar bawah */
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 65px;
+                background-color: #3a3a3a;
+                /* Ganti #121212 jika ingin tema gelap */
+                display: flex;
+                justify-content: space-around;
+                /* Jarak antar icon rata */
+                align-items: center;
+                box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+                /* Bayangan halus di atas */
+                z-index: 1000;
+            }
+
+            .nav-item {
+                text-decoration: none;
+                color: #888888;
+                /* Warna icon tidak aktif */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                transition: 0.3s;
+                flex-grow: 1;
+                /* Agar area klik luas */
+            }
+
+            .nav-item i {
+                font-size: 20px;
+                margin-bottom: 4px;
+            }
+
+            /* Efek Hover / Aktif */
+            .nav-item:hover,
+            .nav-item.active {
+                color: #ffffff;
+                /* Warna saat aktif (Hitam pekat) */
+            }
+
+            /* --- KHUSUS TOMBOL LIVE (Spesial) --- */
+            .nav-item.live-btn {
+                color: #ff0000;
+                /* Warna Merah */
+                font-weight: bold;
+            }
+
+            .nav-item.live-btn i {
+                font-size: 22px;
+                filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.4));
+                /* Efek glowing */
+            }
+
+            /* --- KHUSUS TOMBOL POPULER --- */
+            .nav-item.populer-btn i {
+                color: #ff8800;
+                /* Warna Api (Oranye) */
+            }
+        </style>
+        </head>
+
+        <body>
+
+
+            <nav class="bottom-navbar">
+                <a href="home.html" class="nav-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="#" class="nav-item live-btn">
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                    <span>LIVE</span>
+                </a>
+                </a>
+            </nav>
+        </body>
+
+        <body>
+            <div class="video-container">
+                <iframe src="https://player.kick.com/pakends12pakends-12" frameborder="0" scrolling="no"
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+            <style>
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    /* Rasio 16:9 */
+                    height: 0;
+                    overflow: hidden;
+                }
+
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            </style>
+
+        </body>
+
+        <body>
+            <style>
+                /* Reset agar menempel ke pinggir layar */
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+                    background-color: none;
+                    /* Warna background halaman abu muda */
+                    padding-bottom: 20px;
+                }
+
+                /* --- STYLE CARD --- */
+                .card-full {
+                    background-color: none;
+                    width: 100%;
+                    /* PENTING: Lebar penuh */
+                    margin-bottom: 10px;
+                    /* Jarak antar kartu */
+                    box-shadow: none;
+                    /* Bayangan tipis di bawah */
+                }
+
+                /* Gaya Gambar */
+                .card-image {
+                    width: 100%;
+                    /* Gambar memenuhi lebar layar */
+                    height: auto;
+                    /* Tinggi menyesuaikan */
+                    aspect-ratio: 16/9;
+                    /* Rasio standar video (opsional) */
+                    object-fit: cover;
+                    /* Agar gambar tidak gepeng */
+                    display: block;
+                    /* Menghapus celah putih di bawah gambar */
+                }
+
+                /* Gaya Konten Teks */
+                .card-content {
+                    padding: 12px 16px;
+                    /* Jarak teks dari pinggir kiri/kanan */
+                }
+
+                /* Judul */
+                .card-title {
+                    font-size: 16px;
+                    font-weight: 700;
+                    /* Tebal */
+                    color: #ffffff;
+                    margin-bottom: 4px;
+                    /* Jarak ke teks kecil */
+                    line-height: 1.4;
+                    /* Jarak antar baris judul */
+                }
+
+                /* Teks Kecil */
+                .card-subtitle {
+                    font-size: 13px;
+                    color: #cdcdcd;
+                    /* Warna abu-abu */
+                }
+            </style>
+            </head>
+
+            <body>
+
+                <div class="card-full">
+
+
+                    <div class="card-content">
+                        <div class="card-title">MLCTV LIVE STREAMING 2025</div>
+                        <div class="card-subtitle">Disaksikan 6 Orang • Sejak Live Di Mulai</div>
+                    </div>
+                </div>
+                </div>
+            </body>
+                <body>
+        <style>
+            /* Reset agar menempel ke pinggir layar */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+           body {
+            margin-top: none;
+    font-family: Arial, sans-serif; /* atau font yang Anda pakai */
+    background-color: none;
+    
+    /* --- TAMBAHKAN BARIS INI (KUNCI PERBAIKANNYA) --- */
+    padding-bottom: 100px; 
+    /* Nilai 100px memberi ruang kosong yang cukup di bawah */
+            }
+
+            /* --- STYLE CARD --- */
+            .card-full {
+                background-color: none ;
+                width: 100%;
+                /* PENTING: Lebar penuh */
+                margin-bottom: 10px;
+                /* Jarak antar kartu */
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                /* Bayangan tipis di bawah */
+            }
+
+            /* Gaya Gambar */
+            .card-image {
+                width: 100%;
+                /* Gambar memenuhi lebar layar */
+                height: auto;
+                /* Tinggi menyesuaikan */
+                aspect-ratio: 16/9;
+                /* Rasio standar video (opsional) */
+                object-fit: cover;
+                /* Agar gambar tidak gepeng */
+                display: block;
+                /* Menghapus celah putih di bawah gambar */
+            }
+
+            /* Gaya Konten Teks */
+            .card-content {
+                padding: 12px 16px;
+                /* Jarak teks dari pinggir kiri/kanan */
+                border-radius: 10px;
+            }
+
+            /* Judul */
+            .card-title {
+                font-size: 16px;
+                font-weight: 700;
+                /* Tebal */
+                color: #ffffff;
+                margin-bottom: 4px;
+                /* Jarak ke teks kecil */
+                line-height: 1.4;
+                /* Jarak antar baris judul */
+            }
+
+            /* Teks Kecil */
+            .card-subtitle {
+                font-size: 13px;
+                color: #d7d7d7;
+                /* Warna abu-abu */
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <div class="card-full">
+                <img  src="https://img.sanishtech.com/u/34f1a952bb8a358b97cfd52bfc95cd48.png" alt="Thumbnail"
+                    class="card-image" style="border-radius: 10px;" href="ik.html"><a href="ik.html"></a>
+
+                <div class="card-content">
+                    <div class="card-title"><a href="ik.html" style="text-decoration: none; color: white;">MLCTV Live Streaming Hari Ini</a></div>
+                    <div class="card-subtitle">@MLCMEDIAID </div>
+                </div>
+            </div>
+            </div>
+        </body>
+                    <body>
+        <style>
+            /* Reset agar menempel ke pinggir layar */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+body {
+    font-family: Arial, sans-serif; /* atau font yang Anda pakai */
+    background-color: none;
+    
+    /* --- TAMBAHKAN BARIS INI (KUNCI PERBAIKANNYA) --- */
+    padding-bottom: 100px; 
+    /* Nilai 100px memberi ruang kosong yang cukup di bawah */
+}
+
+            /* --- STYLE CARD --- */
+            .card-full {
+                background-color: none ;
+                width: 100%;
+                /* PENTING: Lebar penuh */
+                margin-bottom: 10px;
+                /* Jarak antar kartu */
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                /* Bayangan tipis di bawah */
+            }
+
+            /* Gaya Gambar */
+            .card-image {
+                width: 100%;
+                /* Gambar memenuhi lebar layar */
+                height: auto;
+                /* Tinggi menyesuaikan */
+                aspect-ratio: 16/9;
+                /* Rasio standar video (opsional) */
+                object-fit: cover;
+                /* Agar gambar tidak gepeng */
+                display: block;
+                /* Menghapus celah putih di bawah gambar */
+            }
+
+            /* Gaya Konten Teks */
+            .card-content {
+                padding: 12px 16px;
+                /* Jarak teks dari pinggir kiri/kanan */
+                border-radius: 10px;
+            }
+
+            /* Judul */
+            .card-title {
+                font-size: 16px;
+                font-weight: 700;
+                /* Tebal */
+                color: #ffffff;
+                margin-bottom: 4px;
+                /* Jarak ke teks kecil */
+                line-height: 1.4;
+                /* Jarak antar baris judul */
+            }
+
+            /* Teks Kecil */
+            .card-subtitle {
+                font-size: 13px;
+                color: #d7d7d7;
+                /* Warna abu-abu */
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <div class="card-full">
+                <img  src="https://i.ytimg.com/vi/vV9NiG53Ues/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGCUgZSgvMA8=&rs=AOn4CLBFaHK8SenmIMpZ3aGC130L4GNuOw" alt="Thumbnail"
+                    class="card-image" style="border-radius: 10px;" href="ik.html"><a href="ik.html"></a>
+
+                <div class="card-content">
+                    <div class="card-title"><a href="video.html" style="text-decoration: none; color: white;">Berkahnya cinta bulan Ramadan, Insyaallah berkah, di MLCTV!!</a></div>
+                    <div class="card-subtitle">@MLCMEDIAID | 22 x di tonton </div>
+                </div>
+            </div>
+            </div>
+        </body>
+</html>
